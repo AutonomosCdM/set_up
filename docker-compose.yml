@@ -1,0 +1,37 @@
+# ARQUITECTURA: Configuración de Docker Compose para el agente de Slack
+# CONTEXTO: Definir servicios, volúmenes y configuraciones de red
+# RESTRICCIONES: Mantener la configuración simple y portable
+
+services:
+  slack-agent:
+    # ARQUITECTURA: Construcción del contenedor desde Dockerfile local
+    build: .
+    
+    # ARQUITECTURA: Política de reinicio para garantizar disponibilidad
+    restart: always
+    
+    # ARQUITECTURA: Gestión de variables de entorno sensibles
+    env_file:
+      - .env
+    
+    # ARQUITECTURA: Volúmenes para persistencia y desarrollo
+    volumes:
+      - .:/app
+      
+    # ARQUITECTURA: Etiquetas para documentación y monitoreo
+    labels:
+      - "com.example.description=Agente de Slack con LangChain y Groq"
+      - "com.example.maintainer=Equipo de Desarrollo"
+      
+    # ARQUITECTURA: Exponer puerto para eventos de Slack
+    ports:
+      - "3000:3000"
+      
+    # ARQUITECTURA: Configuración de red para aislamiento
+    networks:
+      - slack-agent-network
+
+# ARQUITECTURA: Definición de red personalizada
+networks:
+  slack-agent-network:
+    driver: bridge

@@ -1,0 +1,6 @@
+flask
+slack_sdk
+python-dotenv
+langchain
+langchain-community
+langchain-groq
