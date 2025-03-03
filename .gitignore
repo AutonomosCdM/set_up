@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Poetry
+poetry.lock
+dist/
+build/
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Credentials and Sensitive Information
+*.pem
+*.key
+*.crt
+.credentials/
+credentials.json
+token.json
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Testing and Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Miscellaneous
+*.bak
+.tmp/

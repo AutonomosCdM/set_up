@@ -1,0 +1,53 @@
+# Project Intelligence and Learning Journal
+
+## Project Patterns
+- Modular, service-oriented architecture
+- Emphasis on secure, context-aware interactions
+- Flexible integration with external systems
+
+## Development Workflow
+- Use Poetry for dependency management
+- Strict type checking
+- Comprehensive logging
+- Environment-based configuration
+
+## Authentication Approach
+- Granular OAuth 2.0 token management
+- Secure, minimal-scope token generation
+- Robust error handling for authentication flows
+
+## API Integration Strategies
+- Implement robust error handling
+- Use exponential backoff for rate limiting
+- Maintain clear separation between service clients
+
+## Natural Language Processing
+- Context preservation in LLM interactions
+- Fallback mechanisms for API failures
+- Intelligent intent recognition
+
+## Performance Considerations
+- Minimize API call overhead
+- Implement caching mechanisms
+- Optimize LLM interaction latency
+
+## Security Principles
+- Never log sensitive information
+- Use environment-based secret management
+- Implement token rotation strategies
+
+## Extensibility Guidelines
+- Design service clients with clear interfaces
+- Create abstract base classes for service interactions
+- Support plugin-based architecture for future integrations
+
+## Monitoring and Observability
+- Implement structured logging
+- Track API call metrics
+- Create health check mechanisms
+- Design for easy debugging and tracing
+
+## Learning and Adaptation
+- Continuously refine LLM interaction patterns
+- Adapt to changing API capabilities
+- Maintain flexibility in design approach
